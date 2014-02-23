@@ -2,14 +2,15 @@
 
 <html>
 <head>
-	<title>bottomsUp: Homepage</title>	
+	<title>FlintSplint</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<!-- <link href="/css/bootstrap-theme.min.css" rel="stylesheet"> -->
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
-	<link href="/css/flat-ui.css" rel="stylesheet">
+	<!-- <link href="/css/introHCI.css" rel="stylesheet"> -->
+	<!-- <link href="/css/flat-ui.css" rel="stylesheet"> -->
+	<link href="/css/homepage.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,21 +21,62 @@
     <![endif]-->        
 </head>
 
-<body class="homepage">
-	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div class="buttonHolder">
-			<!-- <img class="fitWidth" src="http://www.ru.nl/publish/pages/713224/alcohol.jpg"> -->
-			<!-- <img class="fitWidth" src="/images/12.jpg"> -->
-			<!-- <img class="fitWidth" src="http://i.imgur.com/omylSok.jpg"> -->
-			<!-- <img class="fitWidth" src="images/BottomsUp-final.png"> -->
-			<!-- <a class="fitWidth" href="cabinet"><button class="btn btn-block btn-primary">My Cabinet</button></a> -->
-			<button class="btn btn-inverse" id="begin-button"><a href="cabinet" id="cabinet-button">Let's get started!</a></button>
-			</br>
-			</br>
+<body>
+	<img src="/images/FlintSplint.jpg" class="top-logo">
+		<div class="tagline">
+			<p>
+				Contribute your ideas, <a href="post"><span id="start-a-spark">start a spark</span></a>. Search for ideas, <span id="carry-a-fire">carry a fire</span>.
+			</p>
 		</div>
-	</div>
+
+		<div class="inputform">
+			<form role="form" class="formproperty">
+			  <p class ="tagline" id="start-a-spark-text"> Start a spark. </p>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Description</label>
+			    <textarea class="form-control" rows="3" placeholder ="Enter idea description"></textarea>
+			    <!--<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter idea description">-->
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputFile">File input</label>
+			    <input type="file" id="exampleInputFile">
+			  </div>
+			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+
+		<div class="carry-a-fire">
+			<p class ="tagline" id="carry-a-fire-header"> Carry a fire. </p>
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+			    <h3 class="panel-title">Panel title</h3>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+			    <h3 class="panel-title">Panel title</h3>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+			    <h3 class="panel-title">Panel title</h3>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+
+		</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

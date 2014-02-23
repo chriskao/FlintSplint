@@ -10,7 +10,7 @@ var handlebars = require('express3-handlebars');
 // var fs = require('fs');
 
 var index = require('./routes/index');
-var cabinet = require('./routes/cabinet');
+var post = require('./routes/post');
 var makeDrinks = require('./routes/makeDrinks');
 var recipe = require('./routes/recipe');
 // Example route
@@ -40,7 +40,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/cabinet', cabinet.view);
+app.get('/post', post.view);
 app.get('/makeDrinks', makeDrinks.view);
 app.get('/recipe', recipe.viewRecipe);
 // Example route
