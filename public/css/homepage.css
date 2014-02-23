@@ -19,18 +19,18 @@
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 180px;
+	margin-top: 50px;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
 .inputform {
 	background-image: url('/images/flintbackground.jpg');
-	border-top: 50px;
+	border-top: 20px;
 }
 
 .carry-a-fire {
-	margin-top: 180px;
+	margin-top: 50px;
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
@@ -38,7 +38,7 @@
 }
 
 
-#carry-a-fire {
+/*#carry-a-fire {
 	text-decoration: none;
     border-bottom: 4px solid gray;
 }
@@ -46,7 +46,7 @@
 #start-a-spark {
 	text-decoration: none;
     border-bottom: 4px solid gray;
-}
+}*/
 
 #start-a-spark-text {
 	color: black;
