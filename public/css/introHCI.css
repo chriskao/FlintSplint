@@ -1,0 +1,279 @@
+/* applies to anything of class "example-class-selector" */
+body.homepage{
+    background-image: url('/images/version5.jpg');
+    background-size: 100%;
+}
+
+.breadcrumb {
+    font-size: 90%;
+}
+
+.buttonHolder {
+    text-align: center;
+}
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/lorempixel.jumbotron.jpeg");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.project a {
+     text-align: center;
+}
+
+.fitWidth {
+     width:100%;
+}
+
+.listImage {
+     width:50px;
+     height: auto;
+     max-height: 70px;
+     min-height: 50px;
+}
+
+
+.arrowRight {
+    /*float: right;
+    display: inline-block;*/
+    width: 20px;
+    height: 20px;
+}
+
+.displayImage {
+    width: 30px;
+    height: 80px;
+}
+
+.alcohol-name {
+    font-size: 70%;
+}
+
+.alcohol-display {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 80px;
+    height: 150px;
+}
+
+.ingredients-section {
+    margin: auto;
+    margin-left: -30px;
+}
+
+/*.alcohol-display:active > .x-button {
+    display: inline;
+}*/
+
+.tbr {
+    display: inline-block;
+}
+
+.drinks-test {
+    display: block;
+    /*background-color: #FFFFCC;*/
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*border-bottom: 1px solid gray;*/
+    background-color: #F8F8F8;
+    border-top: 1px solid #E0E0E0 ;
+}
+
+.drinkName {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 4px solid gray;
+    font-size: 100%;
+}
+
+.recipeImage {
+    width: 100px;
+    height: 200px;
+    float: left;
+}
+
+.recipe-ingredients {
+    font-size: 90%;
+}
+
+.drink-instructions {
+    font-size: 90%;
+}
+
+.instruction-block {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ingredient-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+
+.ingredient-list {
+    width: 130px;
+    height: auto;
+    float: right;
+}
+
+
+/*.list-group-item {
+    cursor: pointer;
+}*/
+
+.list-group{
+    width: 100%;
+}
+
+.x-button {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+/*.x-button:hover {
+    display: inline;
+}*/
+
+.recipeGrid {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.image-wrapper {
+    display: block;
+}
+
+.media-body {
+    padding-left: 20px;
+    display: block;
+}
+
+.media-heading {
+    font-weight: bold;
+    font-size: 85%;
+}
+
+.media-text {
+    font-size: 75%;
+}
+
+.arrowRight-wrapper {
+    display: inline-block;
+    float: right;
+    padding-top: 25px;
+}
+
+#navbar-collapse-01 {
+     text-align: center;
+}
+
+#navbar-collapse-01 ul {
+    /*display: inline-block;*/
+    width: 100%;
+    /*list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+#custom-navbar {
+     background-color: #F0F0F0;
+     margin: 0 auto; 
+     text-align: center;
+     width: inherit;
+     display: inline-block;
+}
+
+#cabinet-tab {
+     display: inline-block;
+     text-align: center;
+     margin: auto;
+}
+
+#makedrinks-tab {
+     float: right;
+}
+
+.recipeTitle {
+    font-weight: bold;
+}
+
+.btn-group-wrap {
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+     margin-top: 10px;
+}
+
+hr {
+     color: black;
+     background: gray; 
+     width: 100%; 
+     height: 2px;
+     margin-bottom: 5px;
+     margin-top: 1px;
+     display: inline-block;
+}
+
+div.btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+a {
+    float: left;   
+}
+
+#price-title {
+    display: inline;
+}
+
+#begin-button {
+    position: relative;
+   /* padding: 5px;
+    bottom: 20px;*/
+    margin-top: 105%;
+    opacity: 0.7;
+}
+
+#cabinet-button {
+    color: white;
+}
