@@ -11,6 +11,23 @@ $(document).ready(function() {
 function initializePage() {
 	// add any functionality and listeners you want here
     $(".alcohol-display .displayImage,.alcohol-display .alcohol-name").click(ingredientClick);
+
+    $('#newProjectSubmitButton').click(function(e) {
+        console.log('clicked');
+        var email = $('#start-a-spark-email-input').val();
+        var description = $('#start-a-spark-description-input').val();
+        var file = $('#start-a-spark-file-input').val();
+        // var summary = $('#new-project-form #summary').val();
+        var json = {
+            'user_email': email,
+            'project_description': description,
+            'file':  file
+            // 'summary': summary
+        };
+        $.post('/post/new', json, function() {
+            window.location.href = 'display'; // reload the page
+        });
+    });
 }
 
 function ingredientClick(e) {

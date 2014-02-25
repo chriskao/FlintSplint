@@ -3,6 +3,8 @@
  * GET home page.
  */
 
+var models = require('../models');
+
 exports.view = function(req, res){
 	// var mongodb = require('mongodb');
 	// var databaseUrl = "ranajays:ranajays@troup.mongohq.com:10078/app21902449"; // "username:password@example.com/mydb"
@@ -43,3 +45,41 @@ exports.view = function(req, res){
 	// });
 	res.render('post');
 };
+
+exports.addPost = function(req, res) {
+  var form_data = req.body;
+  console.log(form_data);
+
+  // make a new Project and save it to the DB
+  // YOU MUST send an OK response w/ res.send();
+
+  var newPost = new models.Post({
+    "email": form_data['user_email'],
+    "description": form_data['project_description'],
+    "file": form_data['file']
+    // "image": form_data['image_url']
+  });
+
+  newPost.save(afterSaving);
+
+  function afterSaving(err) {
+    if(err) { console.log(err); res.send(500); }
+    res.send();
+  }
+}
+
+exports.deletePost = function(req, res) {
+  var postID = req.params.id;
+
+  // find the project and remove it
+  // YOU MUST send an OK response w/ res.send();
+  models.Post
+    .find({ "_id": postID})
+    .remove()
+    .exec(afterRemoving);
+
+  function afterRemoving(err) {
+    if(err) console.log(err);
+    res.send();
+  }
+}

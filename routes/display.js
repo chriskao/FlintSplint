@@ -3,8 +3,19 @@
  * GET home page.
  */
 
+var models = require('../models');
+
 exports.view = function(req, res){
-	res.render('display');
+
+	models.Post
+		.find()
+		.exec(renderPosts);
+
+	function renderPosts(err, posts) {
+		//console.log(posts);
+		res.render('display', { 'posts': posts });
+	}
+
 };
 // 	var mongodb = require('mongodb');
 // 	var databaseUrl = "ranajays:ranajays@troup.mongohq.com:10078/app21902449"; // "username:password@example.com/mydb"

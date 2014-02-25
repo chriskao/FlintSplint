@@ -7,14 +7,20 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var mongoose = require('mongoose');
 // var fs = require('fs');
 
 var index = require('./routes/index');
 var post = require('./routes/post');
 var display = require('./routes/display');
-var recipe = require('./routes/recipe');
+// var recipe = require('./routes/recipe');
 // Example route
 // var user = require('./routes/user');
+
+var local_database_name = 'flintsplint';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
 
 var app = express();
 
@@ -42,7 +48,9 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/post', post.view);
 app.get('/display', display.view);
-app.get('/recipe', recipe.viewRecipe);
+app.post('/post/new', post.addPost);
+app.post('/post/:id/delete', post.deletePost);
+// app.get('/recipe', recipe.viewRecipe);
 // Example route
 // app.get('/users', user.list);
 
