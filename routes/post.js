@@ -64,6 +64,7 @@ exports.addPost = function(req, res) {
 
   function afterSaving(err) {
     if(err) { console.log(err); res.send(500); }
+    // res.redirect('/');
     res.send();
   }
 }
